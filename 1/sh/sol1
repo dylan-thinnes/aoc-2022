@@ -1,0 +1,1 @@
+(tr '\n' +; echo 0) | sed -E 's/\+\+/\n/g' | bc | sort -g | tail -n1 | (tr '\n' +; echo 0) | bc
