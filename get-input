@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 source ./env
-mkdir -p $1
-curl -H "Cookie: session=$SESSION" "https://adventofcode.com/2022/day/$1/input" > $1/input
+directory=$(printf "%02d" $1)
+mkdir -p $directory
+curl -H "Cookie: session=$SESSION" "https://adventofcode.com/2022/day/$1/input" > $directory/input
