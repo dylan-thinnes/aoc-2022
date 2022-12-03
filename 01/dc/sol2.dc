@@ -1,0 +1,20 @@
+#!/usr/bin/env -S dc
+[r]sr
+[d3Rd_4R >r]sm
+[
+  _4R
+  4R4R lmx _4R_4R
+  3R3R lmx _3R_3R
+  2R2R lmx _2R_2R
+]ss
+
+[_1 ? d 0 <a]sx
+[r s_ + lxx]sa
+
+[_1 ? d 0 <b]sy
+[
+  r s_ lxx s_ lsx 4Rs_
+  lyx
+]sb
+
+0 0 0 lyx s_ ++ f
