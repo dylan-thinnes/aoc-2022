@@ -27,9 +27,11 @@ day in a different language.
 Languages and solutions so far can be got by running `./summarize`.
 
 ```
-        |1|2|
-awk     |█|█|
-forth   | |█|
-haskell | |█|
-sh      |█|█|
+        |1|2|3|4|
+awk     |█|█|█| |
+dc      |█| | | |
+forth   | |█| | |
+haskell | |█| | |
+perl    | | | |█|
+sh      |█|█| | |
 ```
