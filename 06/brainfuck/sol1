@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Due to some missing features in our brainfuck interpreter, bytes need to be preprocessed
+rs-multifuck brainfuck/sol1.bf $(runghc brainfuck/preproc.hs)
