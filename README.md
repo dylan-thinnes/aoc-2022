@@ -27,14 +27,16 @@ day in a different language.
 Languages and solutions so far can be got by running `./summarize`.
 
 ```
-        |1|2|3|4|
-awk     |█|█|█| |
-dc      |█| | | |
-forth   | |█| | |
-haskell | |█| | |
-perl    | | | |█|
-sed     | | |█| |
-sh      |█|█| | |
+          |1|2|3|4|5|6|7|
+awk       |█|█|█| | | | |
+brainfuck | | | | | |█| |
+dc        |█| | | | | | |
+forth     | |█| | | | | |
+haskell   | |█| | | | | |
+perl      | | | |█| | | |
+sed       | | |█| | | | |
+sh        |█|█| | | | |█|
+vim       | | | | |█| | |
 ```
 
 In my summaries, I will go over the solutions I find more interesting, rather
@@ -64,3 +66,22 @@ complicated part.
 Perl has excellent matching utilities, and with the -n flag and END blocks, it
 can behave like a sophisticated form of Awk. Perl is probably the first "real"
 language I've used as my primary for a day.
+
+### Day 5: Vim Macros
+
+No vimscript, just vim macros. The core of this solution is the `*` key - using
+it, we can implement branching, which can be coupled with macros to make a
+fairly turing complete system. I learned a lot about how to break out of
+macros, and wrote some truly ugly, unreadable line noise to boot. All in all a
+good day.
+
+### Day 6: Brainfuck
+
+An ideal day for brainfuck: a growing stack and a fixed-size state within that
+stack. Still extremely slow, of course.
+
+### Day 7: Bash
+
+Why not simulate a shell in a shell? I feel a bit icky about the amount of
+logic in the awk component for part 2, but a trick using `bc` would be no
+better.
