@@ -1,3 +1,4 @@
+#!/usr/bin/env -S awk -f
 function sign(v) { return v < 0 ? -1 : v == 0 ? 0 : 1 }
 function abs(v) { return v * sign(v) }
 
