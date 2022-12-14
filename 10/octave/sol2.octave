@@ -1,0 +1,10 @@
+#!/usr/bin/env octave
+dat = dlmread(fopen("/dev/stdin", "r"), "emptyvalue", NaN)
+dat(:,1) = 0
+dat = reshape(dat',1,[])
+dat = dat(!isnan(dat))
+
+reg = cumsum([1,dat])(1:240)
+ixes = mod(0:239, 40);
+pixels = abs(reg - ixes) <= 1
+char(32 + 3 * reshape(pixels',40,6)')

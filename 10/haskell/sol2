@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+runghc haskell/Sol2.hs

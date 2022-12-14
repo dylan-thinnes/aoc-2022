@@ -1,0 +1,9 @@
+#!/usr/bin/env octave
+dat = dlmread(fopen("/dev/stdin", "r"), "emptyvalue", NaN)
+dat(:,1) = 0
+dat = reshape(dat',1,[])
+dat = dat(!isnan(dat))
+
+reg = cumsum([1,dat])
+idxs = 20 + 40 * [0:5]
+sum(idxs .* reg(idxs))
